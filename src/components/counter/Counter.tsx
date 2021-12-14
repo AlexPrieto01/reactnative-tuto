@@ -1,6 +1,7 @@
 import { Button, Text } from 'react-native-elements';
-import { View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import React, { useState } from 'react';
+import styles from './counter-styles';
 
 const Counter = () => {
     const [count, setCount] = useState(0);
@@ -14,7 +15,7 @@ const Counter = () => {
     };
 
     return (
-        <View>
+        <View style={styles.container}>
             <Button onPress={onDecrementCount} title="Decrement Count" />
             <Text>Current value: {count}</Text>
             <Button onPress={onIncrementCount} title="Increment Count" />
