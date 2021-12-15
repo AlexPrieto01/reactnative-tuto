@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent'
   },
   buttonTextStyle: {
-    color: theme.colors.primary
+    color: theme.colors.orangestrong
   }
 });
 

@@ -1,9 +1,12 @@
 const theme = {
   colors: {
-    primary: '#ffa726',
+    primary: '#ff9800',
     secondary: '#8d6e63',
     white: '#ffffff',
-    black: '#000000'
+    black: '#000000',
+    electricBlue: '#1630BE',
+    orangestrong: '#ff9800',
+    orangeweak: '#ffb74d'
   }
 };
 
