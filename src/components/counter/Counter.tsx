@@ -16,10 +16,10 @@ const Counter = () => {
 
     return (
         <View style={styles.container}>
-            <Button onPress={onDecrementCount} title="Decrement Count" />
-            <Text>Current value: {count}</Text>
-            <Button onPress={onIncrementCount} title="Increment Count" />
-        </View>
+            <Button onPress={onDecrementCount} title="-" />
+            <Text h4>Current value: {count}</Text>
+            <Button onPress={onIncrementCount} title="+" />
+        </View >
     );
 };
 export default Counter;

@@ -4,7 +4,7 @@ import theme from '../../app/theme';
 const styles = StyleSheet.create({
   container: {
     margin: 20,
-    width: '100%',
+    width: 200,
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-evenly',
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     display: 'flex',
     justifyContent: 'center',
-    width: 80,
+    width: 40,
     height: 40
   },
   buttonStyle: {
