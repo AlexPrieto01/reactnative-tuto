@@ -4,7 +4,7 @@ import theme from '../../app/theme';
 const styles = StyleSheet.create({
   container: {
     margin: 20,
-    width: 200,
+    width: 400,
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-evenly',
