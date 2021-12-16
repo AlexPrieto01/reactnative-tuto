@@ -7,7 +7,7 @@ import styles from './product-styles';
 import Counter from '../../components/counter/Counter';
 import ProductsService from '../../services/ProductServices';
 import Load from '../../components/loader/Loader';
-import ProductItem from '../../components/product-item/Productitem';
+import ProductItem from '../../components/product-item/ProductItem';
 
 
 const Products = () => {
@@ -43,7 +43,6 @@ const Products = () => {
           return <ProductItem product={item} />;
         }}
       />
-      <Counter />
       <Button onPress={onPressButton} title="Ir a la página de detalles" />
     </SafeAreaView>
 

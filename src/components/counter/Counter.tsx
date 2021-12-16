@@ -1,6 +1,6 @@
-import { Button, Text } from 'react-native-elements';
-import { StyleSheet, View } from 'react-native';
 import React, { useState } from 'react';
+import { Button, Text } from 'react-native-elements';
+import { View } from 'react-native';
 import styles from './counter-styles';
 
 const Counter = () => {
@@ -16,10 +16,24 @@ const Counter = () => {
 
     return (
         <View style={styles.container}>
-            <Button onPress={onDecrementCount} title="-" />
-            <Text h4>Current value: {count}</Text>
-            <Button onPress={onIncrementCount} title="+" />
-        </View >
+            <Button
+                containerStyle={styles.buttonContainer}
+                buttonStyle={styles.buttonStyle}
+                titleStyle={styles.buttonTextStyle}
+                title="-"
+                onPress={onDecrementCount}
+                disabled={count <= 0}
+            />
+            <Text>Current value: {count}</Text>
+            <Button
+                containerStyle={styles.buttonContainer}
+                buttonStyle={styles.buttonStyle}
+                titleStyle={styles.buttonTextStyle}
+                title="+"
+                onPress={onIncrementCount}
+            />
+        </View>
     );
 };
+
 export default Counter;

@@ -49,6 +49,9 @@ const styles = StyleSheet.create({
     },
     actionContainer: {
         marginTop: 20
+    },
+    counterContainer: {
+        alignItems: 'center'
     }
 });
 
